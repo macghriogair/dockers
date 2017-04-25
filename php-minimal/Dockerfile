@@ -6,5 +6,3 @@ RUN add-apt-repository ppa:ondrej/php -y && \
     apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php7.0-cli php7.0-common php7.0-soap php7.0-curl php7.0-mcrypt
-
-COPY ./* /opt/tcmwebservice-connector/
