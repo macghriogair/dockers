@@ -6,7 +6,7 @@ RUN apt-get update && \
 RUN add-apt-repository ppa:ondrej/php -y && \
     apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    php7.0-cli php7.0-common openssl php-pear
+    php7.0-cli php7.0-dev php7.0-common openssl php-pear
 
 # PHP Extensions
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
